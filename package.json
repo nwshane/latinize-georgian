@@ -1,0 +1,24 @@
+{
+  "name": "latinize-georgian",
+  "version": "0.1.0",
+  "description": "Transliterates Georgian characters into Latin characters.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --watch"
+  },
+  "keywords": [
+    "transliterate",
+    "georgian",
+    "latin",
+    "language",
+    "localization"
+  ],
+  "author": "Nathan Shane",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.19.1"
+  },
+  "ava": {
+    "source": [ "**/*.{js,json}" ]
+  }
+}
