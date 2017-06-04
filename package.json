@@ -2,6 +2,7 @@
   "name": "latinize-georgian",
   "version": "0.1.0",
   "description": "Transliterates Georgian characters into Latin characters.",
+  "repository": "https://github.com/nwshane/latinize-georgian",
   "main": "index.js",
   "scripts": {
     "test": "ava --watch"
