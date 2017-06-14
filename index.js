@@ -5,6 +5,16 @@ const latinizeChar = (georgianChar) => {
   return latinChar ? latinChar : georgianChar
 }
 
-module.exports = (georgian) => {
-  return georgian.split('').map(latinizeChar).join('')
-}
+const latinizeString = (georgianString) => (
+  georgianString.split('').map(latinizeChar).join('')
+)
+
+const capitalizeChar = (char) => char.toUpperCase()
+
+const capitalizeSentences = (latinString) => (
+  latinString.replace(/(^(\s+)?\w|\.(\s+)?(\w))/g, capitalizeChar)
+)
+
+module.exports = (georgianString) => (
+  capitalizeSentences(latinizeString(georgianString))
+)
