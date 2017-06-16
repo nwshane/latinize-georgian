@@ -2,7 +2,9 @@ Transliterates Georgian text (the [Mkhedruli script](https://en.wikipedia.org/wi
 
 ## Install
 
-`yarn add latinize-georgian`
+```
+yarn add latinize-georgian
+```
 
 ## Usage
 
