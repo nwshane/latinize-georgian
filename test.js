@@ -25,6 +25,13 @@ test('By default capitalizes sentences when preceded by white space', t => {
   )
 })
 
+test('By default capitalizes first word after new line.', t => {
+  t.is(
+    latinizeGeorgian('შენ ხარ ვენახი\nმე ვარ მჭამელი'),
+    "Shen khar venakhi\nMe var mch'ameli"
+  )
+})
+
 test('Transliterates three spaces', t => {
   t.is(latinizeGeorgian('   '), '   ')
 })

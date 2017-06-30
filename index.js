@@ -12,7 +12,7 @@ const latinizeString = (georgianString) => (
 const capitalizeChar = (char) => char.toUpperCase()
 
 const capitalizeSentences = (latinString) => (
-  latinString.replace(/(^(\s+)?\w|\.(\s+)?(\w))/g, capitalizeChar)
+  latinString.replace(/(^(\s+)?\w|[\r\n\.]+(\s+)?(\w))/g, capitalizeChar)
 )
 
 module.exports = (georgianString) => (
