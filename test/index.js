@@ -1,5 +1,5 @@
 const test = require('ava')
-const latinizeGeorgian = require('./index.js')
+const latinizeGeorgian = require('../src/index.js')
 
 test('Testing suite works', t => t.pass())
 
