@@ -1,4 +1,4 @@
-const georgianToLatinMap = require('./georgianToLatinMap.json')
+import georgianToLatinMap from './georgianToLatinMap.json'
 
 const latinizeChar = (georgianChar) => {
   const latinChar = georgianToLatinMap[georgianChar]
