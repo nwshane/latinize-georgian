@@ -15,6 +15,6 @@ const capitalizeSentences = (latinString) => (
   latinString.replace(/(^(\s+)?\w|[\r\n\.]+(\s+)?(\w))/g, capitalizeChar)
 )
 
-module.exports = (georgianString) => (
+export default (georgianString) => (
   capitalizeSentences(latinizeString(georgianString))
 )
